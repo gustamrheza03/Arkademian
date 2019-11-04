@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tokoh Online Sepatu Sport</title>
+    <style>
+        body{
+            background-image: url("assets/img/bata.jpg");
+        }    
+        #item-list{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .item{
+            flex: 1;
+            margin: 10px;
+            text-align: center;
+            background-color: aqua;
+        }
+        .item .gambar img{
+            width: 200px;
+            height: 150px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+        h1{
+            background-color: red;
+            text-align: center;
+            width: 800px;
+            margin: auto;
+            border: 1px solid black;
+            border-radius: 20px;
+            animation-name: gantiwarna;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes gantiwarna{
+            0% {background-color: red; left:0px; top:0px; }
+            25% {background-color: blue; left:200px; top:0px; }
+            50% {background-color: green; left:200px; top:8px; }
+            75% {background-color: orange; left:8px; top:200px; }
+            100% {background-color: yellow; left:8px; top:0px; }
+        }
+        .item .nama{
+            background-color: red;
+        }
+        .item .ukuran{
+            background-color: yellow;
+        }
+        .item .warna{
+            background-color: green;
+        }
+        .item .harga{
+            background-color: gray;
+        }
+        .item:hover{
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <H1>Sepatu Futsal Terbaik</H1>
+    <div id="item-list"></div>
+    <script>
+        let item = [
+    {
+        "nama":"Specs Swervo Rasta",
+        "gambar":"assets/img/sepatufutsal.jpg",
+        "ukuran":"31-43",
+        "warna":"Black Rainbow",
+        "harga":"Rp 590.000",
+    },
+    {
+        "nama":"Adidas Nitrocharge",
+        "gambar":"assets/img/2.jpg",
+        "ukuran":"31-43",
+        "warna":"Blue ",
+        "harga":"Rp 910.000",
+    },
+    {
+        "nama":"Adidas Goletto",
+        "gambar":"assets/img/3.jpg",
+        "ukuran":"31-43",
+        "warna":"Black White",
+        "harga":"Rp 1.047.000",
+    },
+    {
+        "nama":"Adidas Predator",
+        "gambar":"assets/img/4.jpg",
+        "ukuran":"31-43",
+        "warna":"Black red",
+        "harga":"Rp 4.410.000",
+    },
+    {
+        "nama":"Nike Mercurial",
+        "gambar":"assets/img/5.jpg",
+        "ukuran":"31-43",
+        "warna":"Gray",
+        "harga":"Rp 4.852.000",
+    },
+    {
+        "nama":"Nike HyperVenom",
+        "gambar":"assets/img/6.jpg",
+        "ukuran":"31-43",
+        "warna":"Yellow",
+        "harga":"Rp 590.000",
+    },
+    {
+        "nama":"Nike Lunar",
+        "gambar":"assets/img/7.jpg",
+        "ukuran":"31-43",
+        "warna":"Black White",
+        "harga":"Rp 2.065.000",
+    },
+    {
+        "nama":"Puma Evospeed",
+        "gambar":"assets/img/8.jpg",
+        "ukuran":"31-43",
+        "warna":"Yellow Green",
+        "harga":"Rp 2.247.000",
+    },
+    {
+        "nama":"Puma Evopower",
+        "gambar":"assets/img/9.jpg",
+        "ukuran":"31-43",
+        "warna":"blue Yellow",
+        "harga":"Rp 1.647.000",
+    },
+    {
+        "nama":"Specs Accelerator",
+        "gambar":"assets/img/10.jpg",
+        "ukuran":"31-43",
+        "warna":"gold",
+        "harga":"Rp 1.500.000",
+    },
+    {
+        "nama":"Specs lightspeed",
+        "gambar":"assets/img/11.jpg",
+        "ukuran":"31-43",
+        "warna":"white black",
+        "harga":"Rp 700.000",
+    },
+    {
+        "nama":"Specs Lightting",
+        "gambar":"assets/img/12.jpg",
+        "ukuran":"31-43",
+        "warna":"Red Black",
+        "harga":"Rp 750.000",
+    },
+    {
+        "nama":"Specs Swervo Rasta",
+        "gambar":"assets/img/13.jpg",
+        "ukuran":"31-43",
+        "warna":"Black yellow",
+        "harga":"Rp 3.000.000",
+    },
+    {
+        "nama":"Specs Swervo Thunder",
+        "gambar":"assets/img/14.jpg",
+        "ukuran":"31-43",
+        "warna":"Blue",
+        "harga":"Rp 2.300.000",
+    },
+    {
+        "nama":"Umbro",
+        "gambar":"assets/img/15.jpg",
+        "ukuran":"31-43",
+        "warna":"pink",
+        "harga":"Rp 2.000.000",
+    },
+    {
+        "nama":"original nike",
+        "gambar":"assets/img/16.jpg",
+        "ukuran":"31-43",
+        "warna":"red",
+        "harga":"Rp 1.900.000",
+    },
+    {
+        "nama":"lightspeed",
+        "gambar":"assets/img/17.jpg",
+        "ukuran":"31-43",
+        "warna":"Black Rainbow",
+        "harga":"Rp 790.000",
+    },
+    {
+        "nama":"Onitsuka tiger",
+        "gambar":"assets/img/18.jpg",
+        "ukuran":"31-43",
+        "warna":"Gray",
+        "harga":"Rp690.000",
+    },
+    {
+        "nama":"Ortuseight",
+        "gambar":"assets/img/19.jpg",
+        "ukuran":"31-43",
+        "warna":"Red",
+        "harga":"Rp 790.000",
+    },
+    {
+        "nama":"Specs Swervo Rasta",
+        "gambar":"assets/img/20.jpg",
+        "ukuran":"31-43",
+        "warna":"Blue",
+        "harga":"Rp 900.00",
+    },
+
+];
+for(x in item){
+    let namaitem =item[x].nama;
+    let gambaritem =item[x].gambar;
+    let ukuranitem =item[x].ukuran;
+    let warnaitem =item[x].warna;
+    let hargaitem =item[x].harga;
+
+    document.getElementById('item-list').innerHTML +="\
+    <div class='item'>\
+    <div class='gambar'><img src='"+gambaritem+"' alt=''/></div>\
+    <div class='nama'>"+namaitem+"</div>\
+    <div class='ukuran'>"+ukuranitem+"</div>\
+    <div class='warna'>"+warnaitem+"</div>\
+    <div class='harga'>"+hargaitem+"</div>\
+    </div>\
+    "
+    if(((x+1)/5)===0){
+    document.getElementById('item-list').innerHTML+="\
+    <div class=''pemisah></div>\
+    "
+    }
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Latihan</title>
+</head>
+<body>
+    <div id="nama1">Nama</div>
+    <div id="kelas1">Kelas</div>
+    <div id="alamat1">Alamat</div>
+    <div id="jurusan1">Jurusan</div>
+
+    <script>
+      let data = {
+          nama : "Yusril Agisha Hendrawan",
+          kelas : "XI RPL 1",
+          alamat : "Abdul Muis No.44",
+          jurusan : "Rekayasa Perangkat Lunak"
+      };
+
+      let nama = document.getElementById('nama1');
+      let kelas = document.getElementById('kelas1');
+      let alamat = document.getElementById('alamat1');
+      let jurusan = document.getElementById('jurusan1');
+
+      nama.innerHTML = data.nama
+      kelas.innerHTML = data.kelas
+      alamat.innerHTML = data.alamat
+      jurusan.innerHTML = data.jurusan
+    </script>
+</body>
+</html>

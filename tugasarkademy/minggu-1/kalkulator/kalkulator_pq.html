@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tambah">
+        <br><input type="text" id="pert1"><br>
+        <input type="text" id="pert2">
+        <p id="hasilpertambahan"></p>
+        <button onclick="hasil1()">Hasil Pertambahan</button><br/>
+       
+    </div>
+
+    <div class="kali">
+        <br><input type="text" id="perkal1"><br>
+        <input type="text" id="perkal2">
+        <p id="hasilperkalian"></p>
+        <button onclick="hasil2()">Hasil Perkalian</button><br>     
+        <br>    
+    </div>
+
+    <div class="bagi">
+        <br><input type="text" id="bag1"><br>
+        <input type="text" id="bag2">
+        <p id="hasilpembagian"></p>
+        <button onclick="hasil3()">Hasil Pembagian</button><br>
+           
+    </div>
+    <script type="text/javascript">
+    
+        // Hasil Pertambahan
+        function hasil1() {
+            var angka1 = parseInt(document.getElementById('pert1').value)
+            var angka2 = parseInt(document.getElementById('pert2').value)
+            var hasilpertambahan = angka1 + angka2;
+            document.getElementById('hasilpertambahan').innerHTML = hasilpertambahan;
+        }
+
+        // Hasil Pembagian
+        function hasil2() {
+            var angka1 = parseInt(document.getElementById('perkal1').value)
+            var angka2 = parseInt(document.getElementById('perkal2').value)
+            var hasilperkalian = angka1 * angka2;
+            document.getElementById('hasilperkalian').innerHTML = hasilperkalian;
+        }
+        
+        // Hasil Perkalian
+        function hasil3() {
+            var angka1 = parseInt(document.getElementById('bag1').value)
+            var angka2 = parseInt(document.getElementById('bag2').value)
+            var hasilpembagian = angka1 / angka2;
+            document.getElementById('hasilpembagian').innerHTML = hasilpembagian;
+        }
+    </script>
+</body>
+</html>

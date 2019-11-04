@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <title>Document</title>
+     
+</head>
+<body>
+<div id="hasil"></div>
+     <script>
+     class OutputHasil{
+     	getData = async()=>{
+     		let obj ={}
+     		await seTimeout(()=>{
+     		return{
+     				'nama':'<nama masing masing>',
+     				'kelas':'XI-RPL'
+     			}
+     		},5000)
+     		return obj
+     	}
+     	setData = async (data,hasil)=>{
+     		document.getElementById('hasil').innerHTML = await data
+     	}
+     }
+     
+     const OH = new OutputHasil()
+     const output = async()=>{
+     	const data = await OH.getData()
+     	OH.setData(data, 'hasil')
+     }
+     output()
+     //Asynchronus
+     //  const data = new Promise(function(revole,reject){
+     //  	seTimeout(function(){
+     // 	resolve('RPL')	
+     //  	},5000)
+     //   });
+       
+     // data.then(function(hasil){
+     // document.getElementById('hasil').innerHTML = hasil
+     //  }).catch(()=>{
+     //    alert('Maaf Ada Kesalahan')	
+     // })
+       	
+     // Asynchronus ES6
+     // const data = async()=>{
+     //	await setTimeout(function(){
+     //		document.getElementById('hasil').innerHTML = 'RPL'
+     // 	},5000)
+     // }
+     // try{
+     // 	data()
+     // }catch(e){
+     // 	console.log(e)
+     // }
+    
+     </script>
+</body>
+</html>
+

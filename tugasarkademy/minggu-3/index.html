@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BIODATA`S</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>BIODATA JAVA</h1>
+    <form action="#"style="widht: 1000px"class="posisi";>
+    <fieldset class="h">
+    <table styjle="widht: 980px";>
+        <tr>
+            <td rowspan="15" widht="250px">
+                <img src="bosun.jpg"widht="250px" height="420px"/>
+            </td>
+        </tr>
+        <tr>
+            <td><b>Nama Lengkap</b></td>
+            <td>:</td>
+            <td id="nama">nama</td>
+        </tr>
+        <tr>
+            <td><b>Tanggal Lahir</b></td>
+            <td>:</td>
+            <td id="tgl-lhr"></td>
+        </tr>
+        <tr>
+            <td><b>Jenis Kelamin</b></td>
+            <td>:</td>
+            <td id="jenis-kelamin"></td>
+        </tr>
+        <tr>
+            <td><b>Agama</b></td>
+            <td>:</td>
+            <td id="agama"></td>
+        </tr>
+        <tr>
+            <td><b>Alamat</b></td>
+            <td>:</td>
+            <td id="alamat"></td>
+        </tr>
+        <tr>
+            <td><b>Status</b></td>
+            <td>:</td>
+            <td id="status"></td>
+        </tr>
+    </table>
+    <script>
+         let data = {
+          nama : "Yusril Agisha Hendrawan",
+          tanggal: "24 Agustus 2002",
+          jenis: "laki-laki",
+          alamat: "jl.g karang anyar",
+          agama: "islam",
+          status: "Mahasiswa/Pelajar",
+      };
+
+      let nama = document.getElementById('nama');
+      let tanggal = document.getElementById('tgl-lhr');
+      let jenis = document.getElementById('jenis-kelamin');
+      let alamat = document.getElementById('alamat');
+      let agama = document.getElementById('agama');
+      let status = document.getElementById('status');
+
+      nama.innerHTML = data.nama
+      tanggal.innerHTML = data.tanggal
+      jenis.innerHTML = data.jenis
+      alamat.innerHTML = data.alamat
+      agama.innerHTML = data.agama
+      status.innerHTML = data.status
+    </script>
+    </fieldset>
+    </form>
+</body>
+</html>

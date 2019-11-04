@@ -1,0 +1,18 @@
+body {
+    background-color: wheat;
+}
+
+.tambah {
+    border: solid 5px black;
+    width: 100%;
+}
+
+.kali {
+    border: solid 5px blue;
+    width: 100%;
+}
+
+.bagi {
+    border: solid 5px red;
+    width: 100%;
+}

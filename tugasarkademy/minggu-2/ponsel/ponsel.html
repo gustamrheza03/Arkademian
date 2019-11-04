@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0 auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            background: red;
+            width: 700px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin: 30px;
+        }
+        #ponsel-yusril{
+            width: 800px;
+            margin: 0 auto;
+            background-color: rgb(4, 235, 54);
+            border-radius: 30px;
+        }
+        #ponsel-yusril div{
+            margin: 15px;
+            padding: 15px;
+            border: 1px solid black;
+            border-radius: 30px;
+        }
+        #ponsel-yusril div .nama-ponsel{
+            display: block;
+            color: purple;
+        }
+        #ponsel-yusril div .gambar-ponsel{
+            display: block;
+            color: black;
+        }
+        #ponsel-yusril div .harga-ponsel{
+            display: block;
+            color: green;
+        }
+        #ponsel-yusril div .ram-ponsel{
+            display: block;
+            color: yellow;
+        }
+        #ponsel-yusril div .storage-ponsel{
+            display: block;
+            color: red;
+        }
+        #ponsel-yusril div .nama-ponsel::before{
+            content: "Nama: "
+        }
+        #ponsel-yusril div .gambar-ponsel::before{
+            content: "Gambar: "
+        }
+        #ponsel-yusril div .harga-ponsel::before{
+            content: "Harga: "
+        }
+        #ponsel-yusril div .ram-ponsel::before{
+            content: "Ram: "
+        }
+        #ponsel-yusril div .storage-ponsel::before{
+            content: "Storage: "
+        }
+        </style>
+</head>
+<body>
+    <center><h1>10 Merk HP Yang Paling Mahal</h1></center>
+    <div id="ponsel-yusril"></div>
+    <script src="ponsel.js"></script>
+</body>
+</html>

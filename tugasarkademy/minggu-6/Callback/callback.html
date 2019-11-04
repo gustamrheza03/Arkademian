@@ -1,0 +1,13 @@
+<script>
+
+  const kendaraan = (motor,mobil,callback) => {
+  	return callback (motor,mobil);
+  }
+
+  const datakendaraan = kendaraan ('harley davidson','lamborghini',(motor,mobil) => {
+  	return motor + mobil;
+  });
+
+  console.log(datakendaraan);
+
+</script>

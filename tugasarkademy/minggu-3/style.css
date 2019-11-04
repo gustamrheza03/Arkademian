@@ -1,0 +1,48 @@
+table,tr,td{
+    background-color:lightgoldenrodyellow;
+    font-family: Verdana;
+    color:black;
+    border: 1px solid black;
+    padding: 5px;
+    border-collapse:collapse;
+}
+.h{
+    border: 8px groove aqua;
+    padding: 20px;
+}
+.posisi{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-top: auto;
+    left:0;
+    right:0;
+    top: 100px;
+    bottom:0px;
+}
+body{
+    background-image: url('bata.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%; 
+}
+
+h1{
+    background-color: red;
+    text-align: center;
+    width: 800px;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    animation-name: gantiwarna;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes gantiwarna{
+    0% {background-color: red; left:0px; top:0px; }
+    25% {background-color: blue; left:200px; top:0px; }
+    50% {background-color: green; left:200px; top:8px; }
+    75% {background-color: orange; left:8px; top:200px; }
+    100% {background-color: yellow; left:8px; top:0px; }
+}
